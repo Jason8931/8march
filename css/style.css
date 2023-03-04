@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    background: linear-gradient(140deg, rgb(0, 149, 255), rgb(238, 0, 255));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number__top {
+    width: 300px;
+    transform: translateY(81px);
+}
+
+.number__img-top {
+    animation: rotate-r 60s infinite linear;
+}
+
+.number__img-btm {
+    animation: rotate-r 60s infinite linear;
+}
+
+.number__btm {
+    width: 400px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text__title {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 100px;
+    color: rgb(238, 0, 255);
+}
+
+.text__subtitle {
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+@keyframes rotate-r {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-l {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
